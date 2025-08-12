@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: n8n-video-generator
+    env: docker
+    plan: free
+    repo: https://github.com/TU_USUARIO/n8n-video-generator
+    branch: main
+    dockerfilePath: Dockerfile
+    healthCheckPath: /
