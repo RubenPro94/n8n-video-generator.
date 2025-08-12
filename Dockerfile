@@ -1,7 +1,7 @@
 FROM n8nio/n8n
 
-# Instala FFmpeg
+# Instala FFmpeg en Alpine
 USER root
-RUN apt-get update && apt-get install -y ffmpeg
+RUN apk update && apk add ffmpeg
 
 USER node
